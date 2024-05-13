@@ -1,0 +1,13 @@
+function openTab(tabName) {
+    var i, tabcontents, tablinks;
+    tabcontents = document.getElementsByClassName("tab-contents");
+    for (i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tab-links");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+    }
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.classList.add("active-link");
+}
