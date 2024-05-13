@@ -1,62 +1,41 @@
-/* footer.css */
 #footer {
-    padding: 50px 0;
-    background: #080808;
+    background: #4c0dc2;
     color: #fff;
-    font-family: 'poppins', sans-serif;
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-    padding: 10px 10%;
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjusts spacing between contact info and social icons */
+    padding: 0 10%;
 }
 
-.contact-left {
-    flex-basis: 100%; /* Full width for simplicity in the footer */
+.contact-info, .social-icons {
+    display: flex;
+    align-items: center;
 }
 
-.contact-left h1 {
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.contact-left p {
-    margin-top: 10px;
+.contact-info p {
+    margin: 0 20px 0 0; /* Right margin for spacing between elements */
     color: #fff;
     font-size: 18px;
 }
 
-.contact-left p i {
+.contact-info p i {
     color: #ff004f;
     margin-right: 10px;
 }
 
-.social-icons {
-    margin-top: 20px;
-}
-
 .social-icons a {
-    text-decoration: none;
     color: #ababab;
     font-size: 30px;
-    margin-right: 15px;
-    transition: transform 0.5s;
+    margin-left: 15px; /* Space between icons */
+    transition: color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
     color: #ff004f;
-    transform: translateY(-10px);
-}
-
-.btn.btn2 {
-    display: inline-block;
-    background-color: #ff004f;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-.btn.btn2:hover {
-    background-color: #e03e2d;
+    transform: translateY(-5px); /* Slight raise effect on hover */
 }
