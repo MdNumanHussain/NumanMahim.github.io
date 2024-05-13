@@ -1,0 +1,33 @@
+body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.download-cv {
+    padding: 20px;
+    text-align: center;
+}
+
+.download-cv h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e60046;
+}
