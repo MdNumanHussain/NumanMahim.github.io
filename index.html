@@ -3,40 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Portfolio Website</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
+<div id="header">
+    <div class="container">
         <nav>
+            <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Description about yourself, your background, and your professional interests.</p>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Details of your projects or work. Include links to projects or images as needed.</p>
-    </section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="path/to/your_resume.pdf" target="_blank">Download My Resume</a></p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
-    <footer>
-        <p>Copyright © 2023 Your Name</p>
-    </footer>
-    <script src="index.js"></script>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi,I'm <span>Numan</span><br> Hussain</h1>
+        </div>
+    </div>
+</div>
+<!---About--->>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Eager and technologically adept Software Engineering graduate with 
+                    hands-on project experience in app and web development. Looking 
+                    to leverage extensive programming skills and a proactive learning 
+                    attitude in a Graduate Software Engineer role at Enterprise Recruitment 
+                    Ltd, focusing on contributing to innovative solutions in a high- growth 
+                    environment. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
