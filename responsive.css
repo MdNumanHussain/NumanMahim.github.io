@@ -64,24 +64,24 @@
     }
     #footer .footer-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         width: 100%;
-        padding: 10px 0; 
+        padding: 10px 0;
         box-sizing: border-box;
     }
     
     #footer .contact-info {
         display: flex;
         flex-direction: row;
-        width: 100%; 
-        justify-content: flex-start; 
-        align-items: center; 
-        margin-bottom: 5px; 
+        width: 100%;
+        justify-content: center;  /* Centering contents horizontally */
+        align-items: center;
+        margin-bottom: 5px;
     }
     
     #footer .contact-info p {
-        font-size: 12px; /* Setting font size for contact information */
+        font-size: 12px; /* Adjusted font size for contact information */
         margin-right: 5px; /* Space between email and phone number */
     }
     
@@ -92,14 +92,12 @@
     #footer .social-icons {
         display: flex;
         flex-direction: row;
-        width: 100%; 
-        justify-content: flex-start; 
-        flex-wrap: wrap; 
+        width: 100%;
+        justify-content: center; /* Centering contents horizontally */
+        flex-wrap: wrap;
         font-size: 20px;
-        
     }
     
-  
     
     .download-cv {
         display: flex;
