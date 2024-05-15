@@ -25,33 +25,68 @@ body {
 .about-col-2 {
     flex-basis: 60%;
 }
+
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: #fc0000;
+    overflow: hidden; /* Ensures the text does not overflow the width of the element */
+    border-right: .15em solid orange; /* Cursor simulating a typewriter */
+    white-space: nowrap; /* Keeps the text in a single line */
+    box-sizing: border-box;
+    width: 100%; /* Ensures the text container fills its parent */
 }
+
+/* Typewriter typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor animations */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
 .tab-titles {
     display: flex;
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px 0 40px;
+    font-weight: bold;
+    color: chartreuse;
 }
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    padding: 10px 20px; /* Adds padding for better clickability and aesthetics */
+    transition: background-color 0.5s ease, width 0.5s ease; /* Smooth transitions */
 }
+
+.tab-links:hover {
+    background-color: #b300ff; 
+    border-radius: 15px;
+}
+
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #f00101;
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.5s;
+    transition: width 0.5s ease;
+    
 }
+
+.tab-links.active-link::after {
+    width: 100%; /* Ensures the underline expands fully under the active link */
+}
+
 .tab-links.active-link::after {
     width: 50%;
 }

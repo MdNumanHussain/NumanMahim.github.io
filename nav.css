@@ -23,7 +23,20 @@ nav {
     margin-top: 20px;
     margin-left: 20px;
     width: 200px;
+    display: inline-block;
+    animation: flipLogo 3s linear infinite;
+    backface-visibility: hidden;  
 }
+
+@keyframes flipLogo {
+    0%, 100% {
+        transform: rotateY(0deg); 
+    }
+    50% {
+        transform: rotateY(60deg); 
+    }
+}
+
 
 nav ul {
     list-style: none;
