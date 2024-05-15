@@ -69,13 +69,18 @@
         padding: 10px 5%; 
     }
 
-    #footer .contact-info, #footer .social-icons {
+    #footer .contact-info{
+        flex-direction: row; 
+        flex: 1; 
+        align-items: left; 
+        margin: 0; 
+    }
+    #footer .social-icons {
         flex-direction: row; 
         flex: 1; 
         align-items: center; 
         margin: 0; 
     }
-
     #footer .contact-info p {
         display: flex; 
         align-items: center; 
@@ -106,5 +111,6 @@
         text-align: center; 
         padding: 15px; 
     }
+    
     
 }
