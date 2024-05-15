@@ -68,7 +68,6 @@
         align-items: center; 
         padding: 10px 5%; 
     }
-
     #footer .contact-info{
         flex-direction: row; 
         flex: 1; 
@@ -81,6 +80,7 @@
         align-items: center; 
         margin: 0; 
     }
+    
     #footer .contact-info p {
         display: flex; 
         align-items: center; 
@@ -93,8 +93,8 @@
     }
 
     #footer .social-icons a {
-        font-size: 25px; 
-        margin: 0 4px; 
+        font-size: 15px; 
+        margin: 0 2px; 
         display: flex; 
         align-items: center; 
     }
