@@ -11,7 +11,7 @@
     }
     nav .fas {
         display: block;
-        font-size: 25px;
+        font-size: 50px;
     }
     nav ul {
         background: #ff004f;
@@ -55,5 +55,8 @@
     }
     .copyright {
         font-size: 14px;
+    }
+    .logo{
+        width: 100px;;
     }
 }

@@ -1,7 +1,15 @@
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     background: #080808;
     color: #fff;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .container {
     padding: 10px 10%;
@@ -61,4 +69,7 @@ form .btn2 {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+nav .fas{
+    display: none;
 }

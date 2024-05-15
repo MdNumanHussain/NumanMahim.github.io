@@ -76,3 +76,6 @@ body {
 .btn:hover {
     background: #ff004f;
 }
+nav .fas{
+    display: none;
+}

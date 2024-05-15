@@ -43,3 +43,6 @@ body {
     background: #ff004f;
     transform: translateY(-10px);
 }
+nav .fas{
+    display: none;
+}

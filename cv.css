@@ -1,4 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     background: #080808;
     color: #fff;
     font-family: 'Poppins', sans-serif;
@@ -7,6 +15,7 @@ body {
 .download-cv {
     padding: 20px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .download-cv h2 {
@@ -30,4 +39,8 @@ body {
 
 .btn:hover {
     background-color: #e60046;
+}
+
+#footer-placeholder {
+    margin-top: auto;
 }

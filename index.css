@@ -19,6 +19,9 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+nav .fas{
+    display: none;
+}
 .logo {
     width: 140px;
 }
