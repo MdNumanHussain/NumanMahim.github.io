@@ -3,8 +3,14 @@
         background-image: url(images/phone-background.png);
     }
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 20px; 
+        font-size: 16px; 
+        text-align: center; 
+    }
+    
+    .display-picture {
+        width: 70%; /* Larger to fit the screen better */
+        margin-left: -50px; /* Remove margin since it's now stacked */
     }
     .header-text h1 {
         font-size: 30px;
