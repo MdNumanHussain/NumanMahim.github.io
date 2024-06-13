@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0202CTTWJZ');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0202CTTWJZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Numan Hussain</title>
     <link rel="stylesheet" href="services.css">
     <script src="https://kit.fontawesome.com/ec35440de8.js" crossorigin="anonymous"></script>
+    <script src="theme.js" defer></script>
     <script src="services.js" defer></script>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
-
 </head>
 <body>
     <div id="nav-placeholder"></div> 
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Expertise in crafting visually appealing and responsive websites. Utilizing the latest web technologies, I design user-friendly and innovative websites tailored to meet client needs and enhance user engagement.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>UI/UX Design</h2>
-                <p>Specialized in creating intuitive and effective user interfaces and experiences. With a focus on usability and design aesthetics, I ensure seamless interaction and a satisfying user journey across all digital platforms.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>App Development</h2>
-                <p>Offer comprehensive app development services for both Android and iOS platforms. From concept to launch, I develop high-performance, feature-rich apps using industry-best practices and cutting-edge technologies.</p>
-                <a href="#">Learn more</a>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Expertise in crafting visually appealing and responsive websites. Utilizing the latest web technologies, I design user-friendly and innovative websites tailored to meet client needs and enhance user engagement.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Specialized in creating intuitive and effective user interfaces and experiences. With a focus on usability and design aesthetics, I ensure seamless interaction and a satisfying user journey across all digital platforms.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>App Development</h2>
+                    <p>Offer comprehensive app development services for both Android and iOS platforms. From concept to launch, I develop high-performance, feature-rich apps using industry-best practices and cutting-edge technologies.</p>
+                    <a href="#">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div id="footer-placeholder"></div> 
-<script src="fatch_nav.js" defer></script>
-<script src="footer.js" defer></script>
+    <div id="footer-placeholder"></div> 
+    <script src="theme.js" defer></script>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav-placeholder').innerHTML = html;
+            const script = document.createElement('script');
+            script.src = 'nav.js';
+            document.body.appendChild(script);
+            applyStoredTheme(); // Ensure the theme is applied after nav is loaded
+        })
+        .catch(error => console.error('Failed to load the navigation:', error));
+    </script>
+    <script src="footer.js" defer></script>
 </body>
 </html>

@@ -5,10 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #080808;
-    color: #fff;
-}
+
 canvas#movingCircles {
     position: fixed;
     top: 0;

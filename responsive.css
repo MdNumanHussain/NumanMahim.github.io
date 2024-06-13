@@ -17,7 +17,8 @@
     }
     nav .fas {
         display: block;
-        font-size: 50px;
+        align-items: center;
+        font-size: 30px;
     }
     nav ul {
         background: #ff004f;
@@ -26,18 +27,19 @@
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
     }
     nav ul li {
         display: block;
-        margin: 25px;
+        margin-top: 200px;
+        
     }
     nav ul .fas {
         position: absolute;
-        top: 25px;
-        left: 25px;
+        top: 15px;
+        left: 120px;
+        font-size: 50px;
         cursor: pointer;
     }
     .sub-title {
@@ -118,6 +120,4 @@
         text-align: center; 
         padding: 15px; 
     }
-    
-    
 }

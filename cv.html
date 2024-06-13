@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0202CTTWJZ');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0202CTTWJZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Download - Numan Hussain</title>
     <link rel="stylesheet" href="cv.css">
-    <link rel="stylesheet" href="nav.css"> 
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/ec35440de8.js" crossorigin="anonymous"></script>
+    <script src="theme.js" defer></script>
 </head>
 <body>
     <div id="nav-placeholder"></div>
@@ -25,11 +26,21 @@
         <a href="images/cv.pdf" download="Md Numan Hussain-cv.pdf" class="btn">Download as PDF</a>
         <a href="images/cv.docx" download="Md Numan Hussain-cv.docx" class="btn">Download as DOCX</a>
         <a href="images/cv.png" download="Md Numan Hussain-cv.png" class="btn">Download as PNG</a>
-        
     </div>
     <div id="footer-placeholder"></div> 
-    <script src="https://kit.fontawesome.com/ec35440de8.js" crossorigin="anonymous"></script>
+    <script>
+        fetch('nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav-placeholder').innerHTML = html;
+            const script = document.createElement('script');
+            script.src = 'nav.js';
+            document.body.appendChild(script);
+            applyStoredTheme(); // Ensure the theme is applied after nav is loaded
+        })
+        .catch(error => console.error('Failed to load the navigation:', error));
+    </script>
     <script src="fatch_nav.js" defer></script>
-<script src="footer.js" defer></script>
+    <script src="footer.js" defer></script>
 </body>
 </html>

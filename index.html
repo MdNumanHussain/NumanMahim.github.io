@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0202CTTWJZ');
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0202CTTWJZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0202CTTWJZ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
@@ -18,35 +17,32 @@
     <script src="https://kit.fontawesome.com/ec35440de8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="footer.css">
-    
 </head>
-<canvas id="movingCircles" style="position: fixed; left: 0; top: 0; z-index: -1;"></canvas>
-
 <body>
-   
-<!-- Updated to ensure #header is fetched with the background image -->
+<canvas id="movingCircles" style="position: fixed; left: 0; top: 0; z-index: -1;"></canvas>
 <div id="header-placeholder"></div>
 <div class="container">
     <img src="images/background.png" class="display-picture" alt="Home">
     <div class="header-text">
-    
         <p>Software Developer</p>
         <h1>Hi, I'm <span>Numan</span><br> Hussain</h1>
     </div>
 </div>
-<div id="footer-placeholder"></div> 
+<div id="footer-placeholder"></div>
+<script src="theme.js" defer></script>
 <script src="index.js" defer></script>
 <script>
+    // Fetch and insert navigation HTML
     fetch('nav.html')
-    .then(response => response.text())
-    .then(html => {
-        document.getElementById('header-placeholder').innerHTML = html;
-        // Initialize any JS needed for the navbar after it's injected
-        const script = document.createElement('script');
-        script.src = 'nav.js';
-        document.body.appendChild(script);
-    })
-    .catch(error => console.error('Failed to load the navigation:', error));
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-placeholder').innerHTML = html;
+            const script = document.createElement('script');
+            script.src = 'nav.js';
+            document.body.appendChild(script);
+            applyStoredTheme(); // Ensure the theme is applied after nav is loaded
+        })
+        .catch(error => console.error('Failed to load the navigation:', error));
 </script>
 <script src="footer.js" defer></script>
 </body>
