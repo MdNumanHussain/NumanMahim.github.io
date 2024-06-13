@@ -135,7 +135,7 @@ nav ul li a:hover::after {
     color: #ffffff;
     transition: .4s;
     border-radius: 50%;
-    background-color: #ffcc00;
+    background-color: #09d5f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +144,7 @@ nav ul li a:hover::after {
 input:checked + .slider:before {
     content: "\f186"; /* FontAwesome moon icon */
     transform: translateX(85px);
-    background-color: hsl(55, 100%, 50%);
+    background-color: hsl(103, 92%, 48%);
     color: #000000;
 }
 
